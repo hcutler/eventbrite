@@ -1,2 +1,11 @@
 # pycharm
 .idea/
+
+#Python
+*.pyc
+
+#Temp
+*~
+
+#DB
+*.sqlite3
