@@ -9,3 +9,6 @@
 
 #DB
 *.sqlite3
+
+#ignore the migration folder
+migrations/
