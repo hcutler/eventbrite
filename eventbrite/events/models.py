@@ -9,6 +9,9 @@ class Category(models.Model):
     short_name_localized = models.CharField(max_length=128)
     uri = models.URLField()
 
+    class Meta:
+        verbose_name_plural = 'Categories'
+
     def __str__(self):
         return self.name
 
