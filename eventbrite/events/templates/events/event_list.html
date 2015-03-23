@@ -13,11 +13,11 @@
 </ul>
 
 {% if previous_page %}
-    <a href="{% url 'event-list' %}?page={{ previous_page }}">Previous Page</a>
+    <a href="{% url 'event-list' %}?page={{ previous_page }}&categories={{ categories }}">Previous Page</a>
 {% endif %}
 
 {% if next_page %}
-    <a href="{% url 'event-list' %}?page={{ next_page }}">Next Page</a>
+    <a href="{% url 'event-list' %}?page={{ next_page }}&categories={{ categories }}">Next Page</a>
 {% endif %}
 
 
