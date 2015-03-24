@@ -7,6 +7,7 @@
 <body>
 
 <h1>Category</h1>
+<h2>Please select top 3 categories you are interested in</h2>
 {{ form.non_field_errors }}
 <form action="" method="post"> {% csrf_token %}
     {% for field in form %}

@@ -9,6 +9,11 @@ EVENT_SEARCH_API = 'https://www.eventbriteapi.com/v3/events/search/?token=BKKRDK
 
 
 class CategorySelectView(FormView):
+    """
+        This view provides user a Category List page where they can select top 3 interested categories.
+        After user submit the form, it will redirect the user to the event_list page based on their category selection
+    """
+
     template_name = 'events/category_list.html'
     form_class = CategorySelectForm
 
@@ -24,6 +29,9 @@ class CategorySelectView(FormView):
 
 
 class EventListView(TemplateView):
+    """
+        This view get event information from Eventbrite API and display the list to the user
+    """
     template_name = 'events/event_list.html'
 
     def get_list(self, page=1, categories=""):

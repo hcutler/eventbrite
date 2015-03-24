@@ -5,7 +5,9 @@
     <title></title>
 </head>
 <body>
+<a href="{% url 'category-list' %}">Select other categories</a>
 <h1> Event List </h1>
+
 <ul>
 {% for event in event_list %}
     <li>{{ event.name.html }}</li>

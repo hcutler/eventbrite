@@ -3,6 +3,9 @@ from .models import Category
 
 
 class CategorySelectForm(forms.Form):
+    """
+        Form for user to select 3 interested categories
+    """
     category = forms.ModelMultipleChoiceField(queryset=Category.objects.all(),
                                               widget=forms.CheckboxSelectMultiple(),
                                               required=True)

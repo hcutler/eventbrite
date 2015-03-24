@@ -12,3 +12,5 @@
 
 #ignore the migration folder
 migrations/
+
+*.DS_Store
