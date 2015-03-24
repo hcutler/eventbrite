@@ -3,12 +3,17 @@
 <head lang="en">
     <meta charset="UTF-8">
     <title></title>
+    <style>
+        .errorlist li{
+            color: red;
+        }
+    </style>
 </head>
 <body>
 
 <h1>Category</h1>
 <h2>Please select top 3 categories you are interested in</h2>
-{{ form.non_field_errors }}
+<div class="errorlist">{{ form.non_field_errors }}</div>
 <form action="" method="post"> {% csrf_token %}
     {% for field in form %}
         <div class="fieldWrapper">
